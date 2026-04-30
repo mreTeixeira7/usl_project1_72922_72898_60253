@@ -1,0 +1,33 @@
+feature,final_feature,decision,stage,reason
+hotel,hotel,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+lead_time,lead_time,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+arrival_date_month,arrival_season,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+stays_in_weekend_nights,total_nights,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+stays_in_week_nights,total_nights,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+adults,adults,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+children,minor_count,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+babies,minor_count,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+country,country_group,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+market_segment,market_segment,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+distribution_channel,distribution_channel,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+is_repeated_guest,is_repeated_guest,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+previous_cancellations,previous_cancellations,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+previous_bookings_not_canceled,previous_bookings_not_canceled,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+reserved_room_type,reserved_room_type,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+deposit_type,deposit_type,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+customer_type,customer_type,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+required_car_parking_spaces,required_car_parking_spaces,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+total_of_special_requests,total_of_special_requests,include_candidate,raw_clustering_input,"Known at booking creation; final representation may transform, group, or combine this raw field."
+is_canceled,,exclude,raw_dataset_column,Outcome/post-event leakage
+reservation_status,,exclude,raw_dataset_column,Outcome/post-event leakage
+reservation_status_date,,exclude,raw_dataset_column,Outcome/post-event leakage
+agent,,exclude,raw_dataset_column,ID-like high-cardinality feature
+company,,exclude,raw_dataset_column,ID-like high-cardinality feature with very high missingness
+assigned_room_type,,exclude,raw_dataset_column,post-booking operational field
+booking_changes,,exclude,raw_dataset_column,post-booking operational field
+days_in_waiting_list,,exclude,raw_dataset_column,post-booking operational field
+arrival_date_year,,exclude,raw_dataset_column,Redundant temporal context for this setup
+arrival_date_week_number,,exclude,raw_dataset_column,Redundant temporal context for this setup
+arrival_date_day_of_month,,exclude,raw_dataset_column,Redundant temporal context for this setup
+meal,,exclude,raw_dataset_column,Reserved for post-hoc profiling
+adr,,exclude,raw_dataset_column,Reserved for post-hoc profiling

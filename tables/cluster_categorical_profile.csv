@@ -1,0 +1,65 @@
+cluster,feature,top_category,top_category_pct
+0,arrival_season,Winter,29.51
+0,country_group,Portugal,84.88
+0,customer_type,Transient,81.77
+0,deposit_type,No Deposit,98.13
+0,distribution_channel,Corporate,43.98
+0,hotel,City Hotel,51.06
+0,market_segment,Corporate,41.3
+0,reserved_room_type,A,81.39
+1,arrival_season,Summer,34.61
+1,country_group,Western Europe,20.86
+1,customer_type,Transient,89.87
+1,deposit_type,No Deposit,99.97
+1,distribution_channel,TA/TO,94.18
+1,hotel,City Hotel,77.43
+1,market_segment,Online TA,89.02
+1,reserved_room_type,A,61.6
+2,arrival_season,Summer,32.35
+2,country_group,Portugal,37.12
+2,customer_type,Transient,85.98
+2,deposit_type,No Deposit,99.71
+2,distribution_channel,TA/TO,64.36
+2,hotel,Resort Hotel,75.28
+2,market_segment,Online TA,54.63
+2,reserved_room_type,A,54.74
+3,arrival_season,Winter,31.09
+3,country_group,Portugal,47.58
+3,customer_type,Transient,77.3
+3,deposit_type,No Deposit,98.53
+3,distribution_channel,TA/TO,57.24
+3,hotel,City Hotel,60.69
+3,market_segment,Online TA,40.06
+3,reserved_room_type,A,80.34
+4,arrival_season,Summer,48.88
+4,country_group,Portugal,27.06
+4,customer_type,Transient,91.01
+4,deposit_type,No Deposit,99.89
+4,distribution_channel,TA/TO,82.47
+4,hotel,City Hotel,60.86
+4,market_segment,Online TA,74.96
+4,reserved_room_type,A,34.46
+5,arrival_season,Spring,32.41
+5,country_group,Portugal,50.29
+5,customer_type,Transient,61.47
+5,deposit_type,No Deposit,72.16
+5,distribution_channel,TA/TO,91.3
+5,hotel,City Hotel,84.15
+5,market_segment,Offline TA/TO,35.51
+5,reserved_room_type,A,88.86
+6,arrival_season,Summer,44.85
+6,country_group,British Isles,38.92
+6,customer_type,Transient,72.75
+6,deposit_type,No Deposit,97.6
+6,distribution_channel,TA/TO,85.81
+6,hotel,Resort Hotel,81.13
+6,market_segment,Online TA,44.11
+6,reserved_room_type,A,50.81
+7,arrival_season,Autumn,42.55
+7,country_group,Portugal,95.64
+7,customer_type,Transient,52.07
+7,deposit_type,Non Refund,66.18
+7,distribution_channel,TA/TO,93.27
+7,hotel,City Hotel,85.81
+7,market_segment,Groups,57.8
+7,reserved_room_type,A,96.07

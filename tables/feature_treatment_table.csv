@@ -1,0 +1,10 @@
+feature,action,reason
+adults,top-code at 4+,Very large adult counts are exceptionally rare and can dominate Euclidean distance.
+minor_count,combine children + babies; top-code at 3+,"Presence of minors is a key segmentation signal, not an outlier pattern."
+country_group,keep Portugal and Spain separate; merge very small geographic groups into Other,Reduces sparsity while preserving the distinction between the two largest Iberian origins.
+reserved_room_type,group G/B/C/H/P/L into NUMOTHER,Rare room categories are meaningful but too sparse to leave as separate one-hot levels.
+distribution_channel,group GDS/Undefined into Other,These levels are very sparse and are not stable enough as separate one-hot categories.
+market_segment,group Undefined/Aviation/Complementary into Other,These small or ambiguous segments are grouped to reduce categorical sparsity.
+previous_cancellations / previous_bookings_not_canceled,top-code at 5+; scale without log-transform,Large booking-history counts are rare; top-coding limits leverage while preserving the count scale.
+total_nights,top-code at 20+,Very long stays are rare and can dominate Euclidean distance.
+lead_time,keep raw for reporting; log-transform during preprocessing,Strong right skew can otherwise distort distance-based clustering.

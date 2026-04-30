@@ -1,0 +1,5 @@
+column_transformer_branch,input_columns,pipeline_steps,output_role
+num_regular,"adults, is_repeated_guest, previous_cancellations, previous_bookings_not_canceled, required_car_parking_spaces, total_of_special_requests, minor_count, total_nights",SimpleImputer(strategy='median') -> StandardScaler,scaled numeric features
+num_skewed,lead_time,SimpleImputer(strategy='median') -> FunctionTransformer(np.log1p) -> StandardScaler,log-transformed and scaled numeric features
+cat,"hotel, market_segment, distribution_channel, reserved_room_type, deposit_type, customer_type, arrival_season, country_group","SimpleImputer(strategy='most_frequent') -> OneHotEncoder(handle_unknown='ignore', min_frequency=0.01, sparse_output=False)",one-hot encoded categorical features
+remainder,all unspecified columns,drop,excluded from clustering matrix
