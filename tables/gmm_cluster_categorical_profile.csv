@@ -1,0 +1,73 @@
+cluster,feature,top_category,top_category_pct
+0,arrival_season,Summer,33.72
+0,country_group,British Isles,45.05
+0,customer_type,Transient,88.73
+0,deposit_type,No Deposit,100.0
+0,distribution_channel,TA/TO,100.0
+0,hotel,City Hotel,63.94
+0,market_segment,Online TA,76.07
+0,reserved_room_type,A,58.56
+1,arrival_season,Summer,39.58
+1,country_group,Portugal,28.53
+1,customer_type,Transient,81.47
+1,deposit_type,No Deposit,100.0
+1,distribution_channel,TA/TO,100.0
+1,hotel,Resort Hotel,63.47
+1,market_segment,Online TA,77.37
+1,reserved_room_type,A,40.17
+2,arrival_season,Autumn,26.95
+2,country_group,Portugal,88.95
+2,customer_type,Transient,77.97
+2,deposit_type,No Deposit,78.46
+2,distribution_channel,Corporate,56.61
+2,hotel,City Hotel,55.05
+2,market_segment,Corporate,47.21
+2,reserved_room_type,A,85.25
+3,arrival_season,Winter,27.43
+3,country_group,Portugal,44.12
+3,customer_type,Transient,65.71
+3,deposit_type,No Deposit,100.0
+3,distribution_channel,Direct,57.44
+3,hotel,City Hotel,64.1
+3,market_segment,Direct,51.09
+3,reserved_room_type,A,77.43
+4,arrival_season,Summer,35.84
+4,country_group,Portugal,28.35
+4,customer_type,Transient,90.6
+4,deposit_type,No Deposit,100.0
+4,distribution_channel,TA/TO,100.0
+4,hotel,City Hotel,75.92
+4,market_segment,Online TA,100.0
+4,reserved_room_type,A,73.81
+5,arrival_season,Summer,40.6
+5,country_group,Portugal,25.47
+5,customer_type,Transient,90.12
+5,deposit_type,No Deposit,100.0
+5,distribution_channel,Direct,53.0
+5,hotel,City Hotel,53.39
+5,market_segment,Direct,52.57
+5,reserved_room_type,F,34.52
+6,arrival_season,Autumn,28.37
+6,country_group,Portugal,48.99
+6,customer_type,Transient,59.13
+6,deposit_type,No Deposit,97.53
+6,distribution_channel,Direct,43.15
+6,hotel,Resort Hotel,59.99
+6,market_segment,Direct,44.35
+6,reserved_room_type,A,62.76
+7,arrival_season,Spring,35.97
+7,country_group,British Isles,50.01
+7,customer_type,Transient,42.94
+7,deposit_type,No Deposit,90.17
+7,distribution_channel,Direct,50.45
+7,hotel,Resort Hotel,98.78
+7,market_segment,Direct,35.81
+7,reserved_room_type,A,56.7
+8,arrival_season,Autumn,30.97
+8,country_group,Portugal,73.59
+8,customer_type,Transient,53.86
+8,deposit_type,No Deposit,55.77
+8,distribution_channel,TA/TO,100.0
+8,hotel,City Hotel,85.87
+8,market_segment,Offline TA/TO,50.35
+8,reserved_room_type,A,100.0

@@ -1,0 +1,2 @@
+method,k,k_graph,subsample_n,mutual_knn,sigma_auto,eigengap_suggested_k,silhouette,calinski_harabasz,davies_bouldin,min_cluster_share,ari_between_seeds_mean,ari_between_seeds_min,ari_vs_kmeans_k8_mean,kgraph_ari_mean,seed
+SpectralClustering_tutorial,3,15,3000,False,4.257,7,0.293988,300.42,1.853947,0.057,1.0,1.0,0.191555,0.915431,7

@@ -1,0 +1,2 @@
+method,repr_std_silhouette,repr_robust_silhouette,ari_standard_vs_robust,runtime_sec
+GMM k=9 (diag),0.027793338298852336,0.08159985099348566,0.37319405815231704,6.128351675999511

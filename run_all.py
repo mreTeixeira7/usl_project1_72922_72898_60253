@@ -9,28 +9,40 @@
 #   1. src/project.ipynb                  -- Task 1: K-Means baseline
 #   2. src/task2_gmm.ipynb                -- Task 2 + 3.2: GMM + AIC/BIC
 #   3. src/task3_evaluation.ipynb         -- Task 3.1 + 3.3 + 3.4
-#   4. src/task4_repository.ipynb         -- Task 4.2: repo deliverables
-#   5. src/extension_E2_spectral.ipynb    -- Extension E2: Spectral clustering
-#   6. src/extension_E5_visualization.ipynb -- Extension E5: t-SNE
+#   4. src/extension_E2_spectral.ipynb    -- Extension E2: Spectral clustering
+#   5. src/extension_E5_visualization.ipynb -- Extension E5: t-SNE
 
-import argparse, subprocess, sys
+import argparse, shutil, subprocess, sys
 from pathlib import Path
 
 import kagglehub
 from kagglehub import KaggleDatasetAdapter
+from kagglehub.exceptions import DataCorruptionError
 
 SRC_DIR = Path(__file__).parent / "src"
 
 DATA_FILE = SRC_DIR / "hotel_bookings_course_release_v1.csv"
 
 
+KAGGLE_CACHE = Path.home() / ".cache" / "kagglehub" / "datasets" / "jessemostipak" / "hotel-booking-demand"
+
+
 def download_data():
     print("\n" + "="*60 + "\nDownloading dataset from Kaggle\n" + "="*60)
-    df = kagglehub.load_dataset(
-        KaggleDatasetAdapter.PANDAS,
-        "jessemostipak/hotel-booking-demand",
-        "",
-    )
+    try:
+        df = kagglehub.dataset_load(
+            KaggleDatasetAdapter.PANDAS,
+            "jessemostipak/hotel-booking-demand",
+            "hotel_bookings.csv",
+        )
+    except DataCorruptionError:
+        print("Corrupted cache detected — clearing and retrying...")
+        shutil.rmtree(KAGGLE_CACHE, ignore_errors=True)
+        df = kagglehub.dataset_load(
+            KaggleDatasetAdapter.PANDAS,
+            "jessemostipak/hotel-booking-demand",
+            "hotel_bookings.csv",
+        )
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(DATA_FILE, index=False)
     print(f"Saved: {DATA_FILE}  ({len(df):,} rows)")
@@ -40,7 +52,6 @@ CORE_NOTEBOOKS = [
     SRC_DIR / "project.ipynb",
     SRC_DIR / "task2_gmm.ipynb",
     SRC_DIR / "task3_evaluation.ipynb",
-    SRC_DIR / "task4_repository.ipynb",
 ]
 
 EXTENSION_NOTEBOOKS = [
