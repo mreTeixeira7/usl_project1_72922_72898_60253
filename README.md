@@ -11,14 +11,27 @@ No ground-truth labels exist, so all evaluation is internal — results should b
  
 ## How to Run
 
+### One command (recommended)
 
-From the project root:
- 
-| Goal | Linux / macOS | Windows |
-|---|---|---|
-| Full run (all tasks + extensions) | `python3 run_all.py` | `python run_all.py` |
-| Core tasks only | `python3 run_all.py --core-only` | `python run_all.py --core-only` |
- 
+This creates the conda environment automatically if it does not exist, downloads the dataset, and runs the full pipeline.
+
+**Linux / macOS:**
+```bash
+bash reproduce.sh
+```
+
+**Windows (Command Prompt):**
+```bat
+reproduce.bat
+```
+
+To run core tasks only (skips extensions):
+```bash
+bash reproduce.sh --core-only   # Linux / macOS
+reproduce.bat --core-only       # Windows
+```
+
+
 All results are saved to the `figures/` and `tables/` folders.
  
 ---
